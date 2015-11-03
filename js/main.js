@@ -4,7 +4,7 @@ import moment from 'moment';
 import Backbone from 'backbone';
 import parse from './parse_auth';
 import {TodoCollection} from './resources';
-import {TodoView} from './views';
+import {TodoView} from './react_views';
 
 $.ajaxSetup({
   headers: {
@@ -15,6 +15,7 @@ $.ajaxSetup({
 
 let todos = new TodoCollection();
 
+// JQUERY
 todos.fetch().then(function() {
   
   $('.wrapper').html(new TodoView(todos).render().$el);

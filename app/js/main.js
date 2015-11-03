@@ -36,6 +36,7 @@ _jquery2['default'].ajaxSetup({
 
 var todos = new _resources.TodoCollection();
 
+// JQUERY
 todos.fetch().then(function () {
 
   (0, _jquery2['default'])('.wrapper').html(new _views.TodoView(todos).render().$el);
@@ -49,8 +50,8 @@ console.log('Hello, World');
 Object.defineProperty(exports, '__esModule', {
   value: true
 });
-var APP_ID = 'mmoMgOQzCeRE8Ad4vmRkHMLYyTwEPPrAGXMEfDFm';
-var API_KEY = 'xvocUSdI55mrUV7m7fb0ylyXO2kQ6EML2mlBDEoY';
+var APP_ID = 'ZpbLLdeWR2am3pvKeI36Dc5GR2FuhygcSEg0Bhmr';
+var API_KEY = 'h3Qs7UtpFRHgiwOPDrnZltB95XdLpvkRhOVbfvOR';
 var APP_URL = 'https://api.parse.com/1/classes/Todo';
 
 exports['default'] = {
